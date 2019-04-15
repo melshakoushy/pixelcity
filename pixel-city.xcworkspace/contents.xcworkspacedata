@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../Library/Autosave Information/Currrent location.gpx">
+   </FileRef>
+   <FileRef
       location = "group:pixel-city.xcodeproj">
    </FileRef>
    <FileRef
