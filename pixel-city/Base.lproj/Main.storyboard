@@ -87,6 +87,55 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--PopVC-->
+        <scene sceneID="l3d-9n-whD">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" id="TC0-wV-Wfd" customClass="PopVC" customModule="pixel_city" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qCo-Fc-hIx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GpK-s5-27K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooe-Jy-Hgx">
+                                <rect key="frame" x="67.5" y="622" width="240" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to dismiss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkb-pQ-67y">
+                                        <rect key="frame" x="11" y="-0.5" width="218" height="26"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Xqz-5J-kSr"/>
+                                    <constraint firstAttribute="width" constant="240" id="YqJ-kO-lkb"/>
+                                    <constraint firstItem="hkb-pQ-67y" firstAttribute="centerX" secondItem="ooe-Jy-Hgx" secondAttribute="centerX" id="ZCL-sT-cHj"/>
+                                    <constraint firstItem="hkb-pQ-67y" firstAttribute="centerY" secondItem="ooe-Jy-Hgx" secondAttribute="centerY" id="eR1-Se-wqx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TKg-W5-fui" firstAttribute="bottom" secondItem="ooe-Jy-Hgx" secondAttribute="bottom" constant="20" id="ET8-ex-kq7"/>
+                            <constraint firstItem="GpK-s5-27K" firstAttribute="leading" secondItem="TKg-W5-fui" secondAttribute="leading" id="GFt-iO-9lC"/>
+                            <constraint firstItem="GpK-s5-27K" firstAttribute="trailing" secondItem="TKg-W5-fui" secondAttribute="trailing" id="IMI-5v-rAA"/>
+                            <constraint firstItem="GpK-s5-27K" firstAttribute="bottom" secondItem="TKg-W5-fui" secondAttribute="bottom" id="SIo-jb-dJW"/>
+                            <constraint firstItem="ooe-Jy-Hgx" firstAttribute="centerX" secondItem="qCo-Fc-hIx" secondAttribute="centerX" id="bPm-JK-Vg9"/>
+                            <constraint firstItem="GpK-s5-27K" firstAttribute="top" secondItem="qCo-Fc-hIx" secondAttribute="top" id="r8p-J6-74Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TKg-W5-fui"/>
+                    </view>
+                    <connections>
+                        <outlet property="popImageView" destination="GpK-s5-27K" id="j78-1E-87i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1Y-bU-hzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="129.98500749625188"/>
+        </scene>
     </scenes>
     <resources>
         <image name="locationButton" width="67" height="67"/>
